@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'complete-guide';
+  tabSelected = 'recipes';
+
+
+  onTabSelected(tabSelected: string) {
+    this.tabSelected = tabSelected;
+  }
+
 }
