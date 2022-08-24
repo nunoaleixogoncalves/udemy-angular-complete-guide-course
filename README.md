@@ -5,39 +5,47 @@ Udemy course Angular - The Complete Guide (2022 Edition)
 https://www.udemy.com/course/the-complete-guide-to-angular-2
 
 ## Commands:
-# update local angular-cli
-sudo npm uninstall -g angular-cli @angular/cli 
+
+### update local angular-cli
+
+sudo npm uninstall -g angular-cli @angular/cli
 npm cache verify
-# probably not needed
-npm cache clean --force 
+
+### probably not needed
+
+npm cache clean --force
 sudo npm install -g @angular/cli
 
-# create new project
+### create new project
+
 ng new my-first-app
 
-# install dependency 
+### install dependency
+
 npm i --save bootstrap@5.2.0
 
-# serve application
+### serve application
+
 ng serve
 OR
 npm run start
 
-# create items through cli
+### create items through cli
+
 ng generate [component/directive/pipe/service] name
 
 ng g c --skip-tests=true name
 
-# Angular life cycle
+### Angular life cycle
 
-ngOnChanges         // called after a bound input prop
-ngOnInit            // called once at the component init
-ngDoCheck           // called during every change detection run
-ngAfterContentInit  // called after content has been projected into view
-ngAfterContentChecked  // called every time  the projected content has been checked
-ngAfterViewInit     //  called after component view  and child views init
-ngAfterViewChecked  //  called every time  the view and child views have been checked
-ngDestroy           //  called before component is destroyed
+ngOnChanges // called after a bound input prop
+ngOnInit // called once at the component init
+ngDoCheck // called during every change detection run
+ngAfterContentInit // called after content has been projected into view
+ngAfterContentChecked // called every time the projected content has been checked
+ngAfterViewInit // called after component view and child views init
+ngAfterViewChecked // called every time the view and child views have been checked
+ngDestroy // called before component is destroyed
 
 # CompleteGuide
 
